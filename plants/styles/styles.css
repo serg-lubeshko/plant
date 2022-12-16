@@ -1,0 +1,29 @@
+.container {
+    /*border: black solid 1px;*/
+    margin: 0 auto;
+    /*margin-bottom: 20px;*/
+    /*background-color: yellow;*/
+}
+
+.header {
+    height: 134px;
+    background: #EDF2EC;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*max-width: 1440px;*/
+
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 46px;
+}
+
+.nav__item {
+    margin-right: 46px;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
