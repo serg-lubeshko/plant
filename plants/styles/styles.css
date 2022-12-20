@@ -250,6 +250,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     background-color: #EDF2EC;
+    gap: 55px;
+    padding-bottom: 121px;
 }
 
 .pic__item {
@@ -258,17 +260,22 @@ a {
     justify-content: flex-end;
     width: 330px;
     height: 450px;
+
     /*border: 1px solid #696989;*/
-    margin-bottom: 55px;
+
 }
+
 
 .pic__picture {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
+
+
 }
 
 .pic__img{
     width: 100%;
+
 
 }
 
@@ -277,6 +284,7 @@ a {
     height: 100px;
     border: 1px solid #E3E1D5;
     border-radius: 0 0 20px 20px;
+
 
 }
 
@@ -295,4 +303,8 @@ a {
     font-family: "InterReg", sans-serif;
     font-size: 16px;
     line-height: 20px;
+}
+
+.main__section4{
+    height: 560px;
 }
