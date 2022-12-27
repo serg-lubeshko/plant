@@ -20,9 +20,9 @@ a {
 }
 
 @font-face {
-    font-family: "InikaReg";
-    src: local("Inika-Regular");
-    src: url("../../fonts/Inika-Regular.ttf");
+    font-family: "InikaBold";
+    src: local("Inika-Bold");
+    src: url("../../fonts/Inika-Bold.ttf");
 }
 
 .container {
@@ -85,18 +85,18 @@ a {
     justify-content: space-between;
 }
 
-.section1__left {
+.welcome__left {
     width: 50%;
-    position: relative;
-    border: red 1px solid;
+    /*position: relative;*/
+    /*border: red 1px solid;*/
 }
 
-.section1__right {
+.welcome__right {
     width: 50%;
     margin-top: 98px;
 }
 
-.section1__title {
+.welcome__title {
     font-size: 45px;
     line-height: 50px;
     font-family: "InterBold", sans-serif;
@@ -108,7 +108,7 @@ a {
     color: #499A18;
 }
 
-.section1__text {
+.welcome__text {
     font-size: 20px;
     line-height: 35px;
     font-family: "InterReg", sans-serif;
@@ -116,13 +116,18 @@ a {
     margin-bottom: 48px;
 }
 
+.welcome__picture{
+    overflow: hidden;
+}
 
-.section1__img {
+.welcome__img {
     height: 407px;
     display: flex;
-    position: absolute;
-    left: 109px;
-    top: 62px;
+    padding-left: 109px;
+    padding-top: 62px;
+    /*position: absolute;*/
+    /*left: 109px;*/
+    /*top: 62px;*/
 
 }
 
@@ -140,20 +145,20 @@ a {
     /*color: #000;*/
 }
 
-.main__section2 {
+.main__about {
     height: 666px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.section2__left {
+.about__left {
     width: 50%;
     border: #a89951 1px solid;
 
 }
 
-.section2__title {
+.about__title {
     margin: 0;
     margin-top: 161px;
     margin-left: 109px;
@@ -170,7 +175,7 @@ a {
     color: #E06733;
 }
 
-.section2__text {
+.about__text {
     width: 605px;
     height: 208px;
     margin: 0;
@@ -181,18 +186,22 @@ a {
 }
 
 
-.section2__right {
+.about__right {
     width: 50%;
     margin-top: 93px;
     position: relative;
 }
 
-.section2__img {
+.about__img {
     height: 479px;
     width: 464px;
     position: absolute;
     right: 109px;
 }
+
+/*.section3{*/
+/*    margin-bottom: 43px;*/
+/*}*/
 
 .section3__text {
     color: #499A18;
@@ -266,14 +275,13 @@ a {
 }
 
 
+
 .pic__picture {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
-
-
 }
 
-.pic__img{
+.pic__img {
     width: 100%;
 
 
@@ -305,6 +313,213 @@ a {
     line-height: 20px;
 }
 
-.main__section4{
+.main__section4 {
     height: 560px;
+}
+
+/*.prices{*/
+/*    display: flex;*/
+/*    !*flex-direction: column;*!*/
+/*    !*align-items: center;*!*/
+/*}*/
+
+.prices {
+    padding-top: 40px;
+}
+
+.prices__title {
+    margin: 0;
+    font-family: "InterBold", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.prices__text {
+    margin: 0;
+    font-family: "InterBold", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0;
+    max-width: 452px;
+    text-align: right;
+}
+
+
+.wrap2 {
+    max-width: 1222px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*margin-bottom: 60px;*/
+}
+
+.prices__nav {
+    margin-bottom: 6px;
+}
+
+.body__left {
+    height: 282px;
+    width: 332px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #E3E1D5 1px solid;
+}
+
+.body__right {
+    height: 282px;
+    width: 332px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    /*border: #E3E1D5 1px solid;*/
+    padding-top: 34px;
+    gap: 39px;
+
+}
+
+.prices__item {
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.button_price__title {
+    font-family: "InterBold", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.button_price__img {
+    width: 16px;
+}
+
+.prices_right__img {
+    width: 152px;
+    height: 175px;
+
+}
+
+
+.wrap3 {
+    min-width: 1222px;
+    margin: 0 auto;
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+}
+
+.contact {
+    height: 550px;
+    background-color: #EDF2EC;
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: flex-end;
+
+}
+
+.contact__title {
+    display: block;
+    font-family: "InikaBold", sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+    text-align: center;
+}
+
+.contact__picture {
+    /*display: inline-block;*/
+    height: 497px;
+    width: 400px;
+    /*vertical-align: bottom;*/
+
+}
+
+.contact_button {
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    border: none;
+    margin-top: 96px;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+.select_city {
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    font-family: 'InterReg', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    padding-left: 35px;
+
+    background-image: url("../images/icons/city_unactive.png");
+    background-position: calc(100% - 35px);
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+.select_city__item {
+    font-family: 'InterReg', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    /*line-height: 40px;*/
+}
+
+.footer__container {
+    max-width: 1222px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    line-height: 50px;
+    font-family: 'InterReg', sans-serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+.footer__left {
+    word-spacing: 20px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer__img {
+    height: 26.67px;
+    margin-right: 20px;
+}
+
+.footer__img:last-child {
+    margin-right: 0;
 }
