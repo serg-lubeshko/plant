@@ -13,39 +13,43 @@
 <body>
 <header class="header">
     <div class="wrap">
+        <!--        <div class="wrap_header">-->
         <div class="header__logo">
-            <img src="images/logo/img.png" alt="logo" class="header__img">Plants
+            <img src="images/logo/img.png" alt="logo" class="header__img"><span class="header_title">Plants</span>
         </div>
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item"><span class="header__span">Home</span></li>
-                <li class="nav__item">About us</li>
-                <li class="nav__item">Service</li>
-                <li class="nav__item">Price</li>
-                <li class="nav__item">Contacts</li>
+                <li class="nav__item"><a href="#"><span class="header__span">Home</span></a></li>
+                <li class="nav__item"><a href="#about">About us</a></li>
+                <li class="nav__item"><a href="#service">Service</a></li>
+                <li class="nav__item"><a href="#price">Price</a></li>
+                <li class="nav__item"><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
+        <!--        </div>-->
     </div>
 </header>
 <main class="main">
     <section class="main__section1 welcome">
-        <div class="welcome__left">
-            <div class="welcome__picture">
-                <img src="images/pictures/img.png" alt="leaf" class="welcome__img">
+        <div class="welcome-wrap">
+            <div class="welcome__left">
+                <div class="welcome__picture">
+                    <img src="images/pictures/img.png" alt="leaf" class="welcome__img">
+                </div>
             </div>
-        </div>
-        <div class="welcome__right">
-            <h2 class="welcome__title title">We grow <span class="title__span">plants</span> and give you oxygen
-            </h2>
-            <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-            <div class="buttons">
-                <button class="buttons_first">LEARN MORE</button>
+            <div class="welcome__right">
+                <h2 class="welcome__title title">We grow <span class="title__span">plants</span> and give you oxygen
+                </h2>
+                <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.</p>
+                <div class="buttons">
+                    <button class="buttons_first"><span class="button_span">LEARN MORE</span></button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="main__about about">
+    <section class="main__about about" id="about">
         <div class="about__left">
             <h2 class="about__title title">We are <span
                     class="title__span_orange"> professional experienced</span> gardeners</h2>
@@ -56,12 +60,14 @@
                 leap into electronic typesetting, remaining essentially unchanged. </p>
         </div>
         <div class="about__right">
+            <!--            <div class="welcome__picture">-->
             <img src="images/pictures/img_1.png" alt="leaf" class="about__img">
+            <!--            </div>-->
         </div>
     </section>
-    <section class="main__section3 section3">
-        <div class="section3__nav nav">
-            <h2 class="section3__text">Service and our projects</h2>
+    <section class="main__service service" id="service">
+        <div class="service__nav nav">
+            <h2 class="service__text">Service and our projects</h2>
             <div class="nav__menu buttons">
                 <button class="buttons__second">Gardens</button>
                 <button class="buttons__second">Lawn</button>
@@ -69,7 +75,7 @@
             </div>
 
         </div>
-        <div class="section3__picture pic">
+        <div class="service__picture pic">
             <div class="pic__item">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/1.png" alt="pic1" class="pic__img">
@@ -84,7 +90,7 @@
                     <img src="images/pictures/section3/2.png" alt="pic2" class="pic__img">
                 </div>
                 <div class="pic__text text-button">
-                    <h3 class="text-button__title">Garden care</h3>
+                    <h3 class="text-button__title">Planting</h3>
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
@@ -94,7 +100,7 @@
                     <img src="images/pictures/section3/3.png" alt="pic3" class="pic__img">
                 </div>
                 <div class="pic__text text-button">
-                    <h3 class="text-button__title">Garden care</h3>
+                    <h3 class="text-button__title">Lawn care</h3>
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
@@ -103,7 +109,7 @@
                     <img src="images/pictures/section3/4.png" alt="pic4" class="pic__img">
                 </div>
                 <div class="pic__text text-button">
-                    <h3 class="text-button__title">Garden care</h3>
+                    <h3 class="text-button__title">Planting</h3>
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
@@ -121,14 +127,14 @@
                     <img src="images/pictures/section3/6.png" alt="pic6" class="pic__img">
                 </div>
                 <div class="pic__text text-button">
-                    <h3 class="text-button__title">Garden care</h3>
+                    <h3 class="text-button__title">Planting</h3>
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="main__section4 prices">
+    <section class="main__section4 prices" id="price">
         <div class="prices__nav wrap2">
             <h2 class="prices__title">Prices</h2>
             <h2 class="prices__text">Our best <span class="title__span">gardeners</span> are ready to help you</h2>
@@ -151,7 +157,7 @@
             </div>
             <div class="body__right">
 
-                <button class="buttons__second">Contact us</button>
+                <button class="buttons__contact">Contact us</button>
                 <img src="images/pictures/img_3.png" alt="pic" class="prices_right__img">
             </div>
         </div>
@@ -159,20 +165,22 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrap3">
-            <img class="contact__picture" src="images/pictures/contact/contact_woman.png">
+            <img class="contact__picture" src="images/pictures/contact/contact_woman.png" alt="pic_contact">
             <div>
                 <h2 class="contact__title">Contact us</h2>
             </div>
 
-            <select class="contact_button select_city" disabled>
-                <option class="select_city__item" selected disabled hidden>City</option>
-                <option class="select_city__item">Canandaigua, NY</option>
-                <option class="select_city__item">New York City</option>
-                <option class="select_city__item">Yonkers, NY</option>
-                <option class="select_city__item">Sherrill, NY</option>
-            </select>
+            <label>
+                <select class="contact_button select_city" disabled>
+                    <option class="select_city__item" selected disabled hidden>City</option>
+                    <option class="select_city__item">Canandaigua, NY</option>
+                    <option class="select_city__item">New York City</option>
+                    <option class="select_city__item">Yonkers, NY</option>
+                    <option class="select_city__item">Sherrill, NY</option>
+                </select>
+            </label>
 
         </div>
 
@@ -182,11 +190,11 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__left">
-                <a href="https://github.com/serg-lubeshko">&#169; 2022 serg-lubeshko</a>
+                <a href="https://github.com/serg-lubeshko">&#169; 2022 github</a>
             </div>
 
             <div class="footer__center">
-                <a href="https://github.com/serg-lubeshko">Rolling Scopes School</a>
+                <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
             </div>
 
             <div class="footer__right">
@@ -200,6 +208,6 @@
     </footer>
 
 </main>
-</header>
+<script src="index.js"></script>
 </body>
 </html>
