@@ -16,6 +16,12 @@ html {
 }
 
 @font-face {
+    font-family: "InikaReg";
+    src: local("Inika-Regular");
+    src: url("../fonts/Inika-Regular.ttf");
+}
+
+@font-face {
     font-family: "InterBold";
     src: local("Inter-Bold");
     src: url("../fonts/Inter-Bold.ttf");
