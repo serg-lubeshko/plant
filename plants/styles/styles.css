@@ -13,6 +13,7 @@ a:hover{
 
 body {
     margin: 0;
+    background-color: #F5F5F5;
 }
 
 html {
@@ -215,6 +216,7 @@ html {
 
 
 .main__about {
+    background-color: #ffffff;
     height: 666px;
     display: flex;
     flex-direction: row;
@@ -425,6 +427,7 @@ html {
 }
 
 .main__section4 {
+    background-color: #ffffff;
     height: 560px;
 }
 
@@ -533,7 +536,7 @@ html {
     justify-content: space-between;
 }
 
-.contact {
+.contacts {
     height: 550px;
     background-color: #EDF2EC;
     display: flex;
@@ -605,6 +608,10 @@ select::-ms-expand {
     /*line-height: 40px;*/
 }
 
+.footer{
+    background-color: #ffffff;
+}
+
 .footer__container {
     max-width: 1222px;
     margin: 0 auto;
@@ -615,6 +622,7 @@ select::-ms-expand {
     font-family: 'InterReg', sans-serif;
     font-size: 20px;
     align-items: center;
+
 }
 
 .footer__left {
