@@ -79,7 +79,6 @@ html {
     justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
-    background: red;
     height: 134px;
 
     text-align: center;
@@ -1039,13 +1038,14 @@ select::-ms-expand {
         margin-right: 50px;
 
     }
-    .wrap3__title{
+
+    .wrap3__title {
         margin-left: auto;
         margin-right: auto;
         order: 2;
     }
 
-    .select__order{
+    .select__order {
         order: 1
     }
 
@@ -1069,15 +1069,191 @@ select::-ms-expand {
         margin-bottom: 250px;
     }
 
+    .footer__container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 181px;
+        line-height: 50px;
+        font-family: 'InterReg', sans-serif;
+        font-size: 20px;
+        align-items: center;
+        /*vertical-align: center;*/
+        row-gap: 0px;
 
+    }
 
+    .footer__center {
+        margin-left: 0;
+    }
 
+    .footer__left {
 
-
-
+        word-spacing: 20px;
+    }
 
 
 }
 
+@media (max-width: 380px) {
+    .header {
+        height: 96px;
+        background: red;
 
+    }
+
+    .welcome__text {
+        font-size: 16px;
+        line-height: 25px;
+        font-family: "InterReg", sans-serif;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .welcome__title {
+        font-size: 25px;
+        line-height: 35px;
+        font-family: "InterBold", sans-serif;
+        margin: 0;
+        margin-bottom: 22px;
+    }
+
+    /*.welcome__left {*/
+    /*    display: none;*/
+    /*    width: 100%;*/
+    /*    !*position: relative;*!*/
+    /*    !*border: red 1px solid;*!*/
+    /*}*/
+    .welcome-wrap {
+        max-width: 1222px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .welcome__left {
+        display: none;
+    }
+
+    .welcome__right {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .buttons_first {
+        height: 34px;
+        width: 100px;
+        border-radius: 10px;
+        border: 1px solid #E06733;
+        background-color: rgba(224, 103, 51, 0);
+
+    }
+
+    .button_span {
+        font-size: 10px;
+        line-height: 20px;
+        font-family: "InterReg", sans-serif;
+    }
+
+    .main__section1 {
+        min-height: 300px;
+        background: #EDF2EC;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main__about {
+        background-color: #ffffff;
+        min-height: 516px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about__title {
+        display: block;
+        text-align: center;
+        /*margin: 0 auto;*/
+        margin-top: 27px;
+        margin-left: 46px;
+
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: "InikaReg", sans-serif;
+        max-width: 288px;
+        min-height: 57px;
+
+    }
+
+    .about__text {
+        min-width: 228.38px;
+        /*margin: 0;*/
+        margin-left: 25px;
+        font-family: "InterReg", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        margin-right: 8px;
+        /*text-align: center;*/
+    }
+
+    .about__img {
+        height: 147px;
+        width: 150px;
+        padding-right: 50px;
+
+        margin-top: 4px;
+        margin-left: 65px;
+        margin-bottom: 50px;
+    }
+
+    .service__text {
+        color: #499A18;
+        font-family: "InikaReg", sans-serif;
+        font-size: 25px;
+        line-height: 32px;
+        margin-top: 30px;
+        margin-left: 23px;
+        width: 187px;
+        /*height: 94px;*/
+        /*margin-bottom: 0;*/
+    }
+
+    .buttons__second {
+        margin-right: 7px;
+        height: 35px;
+        width: 121px;
+        border: 1px solid #E06733;
+        color: #E06733;
+        background-color: rgba(224, 103, 51, 0);
+        border-radius: 5px;
+        font-family: "InikaReg", sans-serif;
+        font-size: 15px;
+        column-gap: 10px;
+
+    }
+
+    .nav__menu {
+        padding-top: 28px;
+        margin-left: 25px;
+    }
+
+
+}
+
+/*color: #499A18;*/
+/*font-family: "InikaReg", sans-serif;*/
+/*font-size: 40px;*/
+/*line-height: 52px;*/
+/*width: 306px;*/
+/*margin-top: 40px;*/
+/*margin-left: 109px;*/
+/*height: 94px;*/
+/*margin-bottom: 0;*/
 
