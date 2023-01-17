@@ -20,7 +20,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+.prices__text_380{display: none}
 @font-face {
     font-family: "InikaReg";
     src: local("Inika-Regular");
@@ -520,6 +520,7 @@ html {
     font-family: "InterBold", sans-serif;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 15px;
 }
 
 .button_price__img {
@@ -1226,7 +1227,7 @@ select::-ms-expand {
     }
 
     .buttons__second {
-        margin-right: 7px;
+        margin-right: 0;
         height: 35px;
         width: 121px;
         border: 1px solid #E06733;
@@ -1235,17 +1236,186 @@ select::-ms-expand {
         border-radius: 5px;
         font-family: "InikaReg", sans-serif;
         font-size: 15px;
-        column-gap: 10px;
+
 
     }
 
     .nav__menu {
-        padding-top: 28px;
+        padding-top: 10px;
         margin-left: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px
+    }
+
+    .text-button__text {
+        margin-top: 8px;
+        margin-left: 40px;
+        text-align: center;
+        font-family: "InterReg", sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        width: 201px;
+
+    }
+
+    .service__picture {
+        flex-wrap: wrap;
+        gap:33px;
+        height: 2818px;
+    }
+
+    .main__section4 {
+        height: 512px;
+    }
+
+    .body__right{
+        display: none;
+    }
+
+    .prices__text_380{
+        width: 230px;
+        display: inline-block;
+        font-family: "InterBold", sans-serif;
+        line-height: 35px;
+        font-size: 20px;
+        text-align: center;
+        margin-left:75px;
+        margin-bottom: 0;
+    }
+
+    .prices__title{
+        font-size: 25px;
+        margin: 0;
+        font-family: "InterBold", sans-serif;
+        line-height: 42px;
+        margin-left: 75px;
+        margin-bottom: 30px;
+
+    }
+
+    .prices__nav {
+        padding-top: 20px;
+        /*margin-bottom: 6px;*/
+
+    }
+
+    .body__left {
+        height: 225px;
+        width: 224px;
+        border-radius: 20px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: space-evenly;*/
+        /*align-items: center;*/
+        border: #E3E1D5 1px solid;
+        padding-top: 10px;
+        /*margin-bottom: 30px;*/
+
+    }
+
+    .prices__item {
+        height: 51px;
+        width: 180px;
+        border-radius: 20px;
+        background-color: #EDF2EC;
+        border: none;
+        margin-bottom: 12px;
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: space-evenly;*/
+        /*align-items: center;*/
+        padding-right: 39px;
+        padding-left: 25px;
+
+
+    }
+
+    .button_price__title {
+        font-family: "InterBold", sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 10px;
+        justify-items: start;
+    }
+    .button_price1{
+        margin-top: 0;
+        margin-bottom:0;
+    }
+    .button_price2{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .wrap2 {
+        max-width: 380px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*margin-bottom: 60px;*/
+        margin-left: 77px;
+    }
+
+    .buttons__contact_380{
+        width: 121px;
+        height: 35px;
+        margin-right: 3px;
+        margin-top: 19px;
+        border: 1px solid #E06733;
+        color: #E06733;
+        background-color: rgba(224, 103, 51, 0);
+        border-radius: 5px;
+        font-family: "InikaReg", sans-serif;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .contact__title {
+        display: inline-block;
+        font-family: "InikaBold", sans-serif;
+        font-size: 25px;
+        line-height: 32px;
+        color: #499A18;
+        text-align: center;
+        margin-bottom: 98px;
+        margin-right: 10px;
+
+    }
+
+    .wrap3__title {
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+
+    .select__order {
+        order: 1
+    }
+    .wrap3 {
+        min-width: 380px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
 
+    /*.contacts {*/
+    /*    height: 739px;*/
+    /*    background-color: #EDF2EC;*/
+    /*    !*display: flex;*!*/
+    /*    !*flex-direction: row;*!*/
+    /*    !*align-items: flex-end;*!*/
+
+    /*}*/
+
 }
+
+
 
 /*color: #499A18;*/
 /*font-family: "InikaReg", sans-serif;*/
