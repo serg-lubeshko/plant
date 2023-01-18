@@ -1082,7 +1082,7 @@ select::-ms-expand {
         font-size: 20px;
         align-items: center;
         /*vertical-align: center;*/
-        row-gap: 0px;
+        row-gap: 0;
 
     }
 
@@ -1381,14 +1381,15 @@ select::-ms-expand {
         line-height: 32px;
         color: #499A18;
         text-align: center;
-        margin-bottom: 98px;
-        margin-right: 10px;
+        margin-bottom: 80px;
+        margin-right: 55px;
 
     }
 
     .wrap3__title {
         margin-left: auto;
         margin-right: auto;
+
         order: 2;
     }
 
@@ -1402,7 +1403,32 @@ select::-ms-expand {
         flex-direction: column-reverse;
         align-items: center;
     }
+     .contacts {
+        height: 445px;
+        background-color: #EDF2EC;
+        display: flex;
+        /*flex-direction: row;*/
+        align-items: flex-end;
 
+    }
+
+    .contact__picture {
+        height: 100%;
+        width: 100px;
+        margin-right: 0;
+    }
+
+    .contact_button {
+
+        width: 300px;
+        /*height: 50px;*/
+        /*background: #D6E7D2;*/
+        /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
+        /*border-radius: 0;*/
+        /*border: none;*/
+        margin-top: 0;
+        margin-bottom: 130px;
+    }
 
     /*.contacts {*/
     /*    height: 739px;*/
