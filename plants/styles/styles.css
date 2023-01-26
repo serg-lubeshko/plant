@@ -604,11 +604,43 @@ select::-ms-expand {
     padding: 0;
     padding-left: 22px;
 
+
+    background-image: url("../images/icons/city_active.png");
+    background-position: calc(100% - 35px);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-color: #C1E698;
+}
+
+
+.select_city:disabled {
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    font-family: 'InterReg', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    padding-left: 22px;
+
+
     background-image: url("../images/icons/city_unactive.png");
     background-position: calc(100% - 35px);
     background-size: 16px;
     background-repeat: no-repeat;
 }
+.select_city.select_city__itemn {
+    border-bottom: #000 1px dashed;
+}
+.select_city__item {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+    background-color: #C1E698;
+    /*position: absolute;*/
+}
+
 
 .select_city__item {
     font-family: 'InterReg', sans-serif;
@@ -1570,6 +1602,36 @@ select::-ms-expand {
     }
 
 
+}
+/*part 3*/
+.price-card{
+    width: 250px;
+    height: 154px;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+
+.price-card__wrap{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+.accordion__header{
+    display:inline-block;
+
+}
+
+.price_icon{
+    margin-right:53px;
+    /*border-bottom: black 1px solid;*/
+    /*padding-bottom: 12px;*/
+}
+
+.zzz span{
+    border-bottom: black 1px solid;
+    /*width: 1000px;*/
 }
 
 /*.contacts {*/
