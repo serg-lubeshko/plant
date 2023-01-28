@@ -1206,6 +1206,8 @@ select::-ms-expand {
     }
 
 
+
+
     .hamburger_active span:nth-child(3) {
         margin-bottom: -2px;
         transform: translateY(-3px) rotate(45deg); }
@@ -1453,15 +1455,15 @@ select::-ms-expand {
 
     }
 
-    .button_price__title {
-        font-family: "InterBold", sans-serif;
-        font-size: 15px;
-        line-height: 20px;
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 10px;
-        justify-items: start;
-    }
+    /*.button_price__title {*/
+    /*    font-family: "InterBold", sans-serif;*/
+    /*    font-size: 15px;*/
+    /*    line-height: 20px;*/
+    /*    margin-top: 20px;*/
+    /*    margin-left: 5px;*/
+    /*    margin-right: 10px;*/
+    /*    justify-items: start;*/
+    /*}*/
 
     .button_price1 {
         margin-top: 0;
@@ -1616,6 +1618,7 @@ select::-ms-expand {
     margin-right: 40px;
     margin-top: 16px;
     margin-bottom: 16px;
+    /*border: 1px black solid;*/
 
 }
 .accordion__header{
@@ -1624,7 +1627,7 @@ select::-ms-expand {
 }
 
 .price_icon{
-    margin-right:53px;
+    margin-right:51px;
     /*border-bottom: black 1px solid;*/
     /*padding-bottom: 12px;*/
 }
@@ -1644,6 +1647,67 @@ select::-ms-expand {
 /*}*/
 
 
+.child{
+    border: 1px solid #D6E7D2;
+    border-radius: 20px;
+    background-color: #D6E7D2;
+    position: relative;
+    /*display: none;*/
+}
+
+.not-open__main-content{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 16px;
+    margin-bottom: 16px;}
+
+.child__text{
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    font-family: 'InterReg';
+    font-weight: 300;
+    font-size: 10px;
+    color: #717171 ;
+    line-height: 1.1;
+    margin-bottom: 5px;
+
+}
+.child__text-dollar{
+    padding: 0;
+    margin: 0;
+    /*margin-top: 3px;*/
+    font-family: "InterReg", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    /*padding-bottom: 10px;*/
+    /*padding:20px;*/
+}
+.child__text-dollar span{
+    color: #E06733;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.child__button{
+    width: 86px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.child__button-text{
+    padding: 0;
+    margin: 0;
+    font-family: "InterReg", sans-serif;
+    text-align: center;
+    vertical-align: center;
+    color: #717171;
+    font-weight: bold;
+    padding-top: 2px;
+    line-height: 20px;
+
+}
 /*color: #499A18;*/
 /*font-family: "InikaReg", sans-serif;*/
 /*font-size: 40px;*/
@@ -1654,3 +1718,97 @@ select::-ms-expand {
 /*height: 94px;*/
 /*margin-bottom: 0;*/
 
+.child__title {
+    font-family: "InterBold", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.child__img {
+    width: 16px;
+    position: absolute;
+    right: 39px;
+    rotate: 180deg;
+}
+
+.not-open .child{
+    display: none;
+}
+
+.open{
+    display: block
+}
+
+
+.adress__wrap{
+
+    margin-left: 30px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.adress__left{
+    width: 40%;
+    /*border:2px solid #ffb700;*/
+}
+
+.adress__right{
+    width: 60%;
+    /*border:2px solid blue ;*/
+
+}
+.adress__right p{
+    font-family: "InterReg", sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    color: #717171;
+    margin: 0;
+    padding: 0;
+    letter-spacing: calc(1em / 20);
+;
+}
+.adress__left p{
+    font-family: "InterReg", sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: calc(1em / 20);
+;
+}
+
+.adress{
+    width: 445px;
+    height: 210px;
+    border:2px solid #2b2b2c;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+}
+
+.adress__flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.adress__button{
+    margin: 0 auto  ;
+    width: 120px;
+    height: 25px;
+    border:2px solid #ffb700;
+    border-radius: 5px;
+    /*margin-top: 1px;*/
+    margin-left: 160px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "InikaReg", sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+
+
+
+}
