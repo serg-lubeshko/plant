@@ -29,8 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
 // })
 // });
 
-const button = document.querySelector('.not-open');
-const parent = button.parentNode;
+// const button = document.querySelector('.not-open');
+// const parent = button.parentNode;
 
 // button.onclick = function () {
 //     // body...
@@ -42,13 +42,13 @@ const parent = button.parentNode;
 // const button = document.querySelector('button');
 // const parent = button.parentNode;
 //
-button.addEventListener('click', function() {
-
-    const classes = parent.classList;
-    console.log(classes)
-    classes.toggle('not-open');
-    classes.toggle('open');
-});
+// button.addEventListener('click', function() {
+//
+//     const classes = parent.classList;
+//     console.log(classes)
+//     classes.toggle('not-open');
+//     classes.toggle('open');
+// });
 // При нажатии на dropdown кнопку появляется описание тарифов цен в соответствии с макетом.
 // Внутри реализована кнопка order, которая ведет на секцию contacts, при нажатии на нее Accordion
 // все еще остается открытым. +25
@@ -56,3 +56,34 @@ button.addEventListener('click', function() {
 // Пользователь может самостоятельно закрыть содержимое нажав на кнопку dropup,
 // но не может одновременно открыть все тарифы услуг, при открытии нового тарифа предыдущее
 // автоматически закрывается. +25
+
+
+const buttons = document.querySelectorAll('button.prices__item');
+    console.log(buttons)
+// const parent = button.parentNode;
+
+// button.onclick = function () {
+//     // body...
+//     console.log(parent)
+//
+//     alert('Hi');
+// };
+
+// const button = document.querySelector('button');
+// const parent = button.parentNode;
+//
+// buttons.addEventListener('click', function() { ....
+buttons.forEach((item) => item.addEventListener('click', function() {
+    console.log(item, 'item')
+    // const classes = parent.classList;
+    const classes = item.parentNode.classList;
+    console.log(classes, 'fdsfsdf')
+    classes.toggle('not-open');
+    classes.toggle('open');
+    buttons[1].toggle('non_active')
+    // buttons[1].disable=true
+
+
+}));
+
+

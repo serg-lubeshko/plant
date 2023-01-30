@@ -176,14 +176,14 @@
                                 recently</p>
                             <p class="child__text-dollar"><span>$15</span> / per hour</p>
                             <div class="child__button ">
-                                <p class="child__button-text">Order</p>
+                                <a href="#city"><p class="child__button-text">Order</p></a>
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="not-open price-2">
-                    <button class="prices__item button_price2">
+                    <button class="prices__item button_price2 non_active">
                         <p class="button_price__title">Standard</p>
                         <img src="images/icons/img.png" alt="icons" class="button_price__img">
                     </button>
@@ -235,10 +235,6 @@
                 <!--                        </div>-->
                 <!--                    </div>-->
                 <!--                </div>-->
-                <button class="prices__item button_price3">
-                    <span class="button_price__title">Pro care</span>
-                    <img src="images/icons/img.png" alt="icons" class="button_price__img">
-                </button>
             </div>
 
             <div class="body__right">
@@ -265,7 +261,7 @@
                 </div>
 
                 <label class="select__order">
-                    <select class="contact_button select_city ">
+                    <select class="contact_button select_city"  id="city">
                         <option class="select_city__item" selected disabled hidden>City</option>
                         <option class="select_city__item"><span>Canandaigua, NY</span></option>
                         <option class="select_city__item">New York City</option>

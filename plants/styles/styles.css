@@ -1742,6 +1742,11 @@ select::-ms-expand {
     display: block
 }
 
+/*.button_price1{*/
+/*    display: none;*/
+/*}*/
+
+
 
 .adress__wrap{
 
@@ -1811,4 +1816,13 @@ select::-ms-expand {
 
 
 
+}
+
+/*.non_active:disabled*/
+
+    .non_active:disabled,
+    .non_active[disabled]{
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
 }
