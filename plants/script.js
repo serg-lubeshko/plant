@@ -99,16 +99,16 @@ container.addEventListener("click", (e) => {
 });
 
 const test = [
-    {id: 1, city: "Canandaigua, NY", phone: "+1\t585\t393 0001", address: "151 Charlotte Street"},
-    {id: 2, city: "New York City", phone: "+1 212 456 0002", address: "9 East 91st Street"},
-    {id: 3, city: "Yonkers, NY", phone: "+1\t914\t678 0003", address: "511 Warburton Ave"},
-    {id: 4, city: "Sherrill, NY", phone: "+1\t315\t908 0004", address: "14 WEST Noyes BLVD"},
+    {id: 1, city: "Canandaigua, NY", phone: "+1\t585\t393\t0001", address: "151 Charlotte Street"},
+    {id: 2, city: "New York City", phone: "+1\t212\t456\t0002", address: "9 East 91st Street"},
+    {id: 3, city: "Yonkers, NY", phone: "+1\t914\t678\t0003", address: "511 Warburton Ave"},
+    {id: 4, city: "Sherrill, NY", phone: "+1\t315\t908\t0004", address: "14 WEST Noyes BLVD"},
 ];
 
-const selectValue = document.querySelector(".select_city");
+const selectValue = document.querySelector(".select_city2");
 
 test.forEach((item) => {
-    const option = document.createElement("option");
+    const option = document.createElement("a");
     option.setAttribute("value", item.city);
     option.textContent = item.city;
     selectValue.appendChild(option);
@@ -166,3 +166,25 @@ gardensSection
                 });
         }
     });
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

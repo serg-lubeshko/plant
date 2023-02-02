@@ -244,7 +244,7 @@
             <div class="body__right">
                 <h3 class="prices__text_2">Our best <span class="title__span">gardeners</span> are ready to help you
                 </h3>
-                <button class="buttons__contact">Contact us</button>
+                <a href="#contact"><button class="buttons__contact">Contact us</button></a>
                 <img src="images/pictures/img_3.png" alt="pic" class="prices_right__img">
             </div>
         </div>
@@ -256,24 +256,36 @@
 
     <section class="contacts" id="contact">
 
+
         <div class="wrap3">
-            <img class="contact__picture" src="images/pictures/contact/contact_woman_768.png
-" alt="pic_contact">
+            <img class="contact__picture" src="images/pictures/contact/contact_woman_768.png" alt="pic_contact">
+            <div class="contact__title">Contact us</div>
             <div>
                 <div class="wrap3__title">
-                    <h2 class="contact__title">Contact us</h2>
+                    <h2 class="contact__title2"> </h2>
+                </div>
+<!--                Кнопка-->
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">City</button>
+                    <div id="myDropdown" class="dropdown-content select_city2">
+<!--                        <a href="#">Link 1</a>-->
+
+                    </div>
                 </div>
 
-                <label class="select__order">
-                    <select class="contact_button select_city"  id="city1">
-<!--                        <option class="select_city__item" selected disabled hidden>City</option>-->
-                        <option class="select_city__item" selected>City</option>
-<!--                        <option class="select_city__item"><span></span></option>-->
-<!--                        <option class="select_city__item">New York City</option>-->
-<!--                        <option class="select_city__item">Yonkers, NY</option>-->
-<!--                        <option class="select_city__item">Sherrill, NY</option>-->
 
-                    </select>
+
+<!--                <label class="select__order">-->
+<!--                    <select class="contact_button select_city"  id="city1">-->
+<!--&lt;!&ndash;                        <option class="select_city__item" selected disabled hidden>City</option>&ndash;&gt;-->
+<!--                        <option class="select_city__item" selected>City</option>-->
+<!--&lt;!&ndash;                        <option class="select_city__item"><span></span></option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">New York City</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">Yonkers, NY</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">Sherrill, NY</option>&ndash;&gt;-->
+
+<!--                    </select>-->
 
 
                     <div class="adress">
@@ -291,7 +303,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="adress__button"><a href=”tel:+380441234567”>Call us</a></div>
+                        <a href=”tel:+380441234567”><div class="adress__button">Call us</div></a>
                     </div>
                 </label>
             </div>
