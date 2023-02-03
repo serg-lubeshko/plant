@@ -99,10 +99,30 @@ container.addEventListener("click", (e) => {
 });
 
 const test = [
-    {id: 1, city: "Canandaigua, NY", phone: "+1\t585\t393\t0001", address: "151 Charlotte Street"},
-    {id: 2, city: "New York City", phone: "+1\t212\t456\t0002", address: "9 East 91st Street"},
-    {id: 3, city: "Yonkers, NY", phone: "+1\t914\t678\t0003", address: "511 Warburton Ave"},
-    {id: 4, city: "Sherrill, NY", phone: "+1\t315\t908\t0004", address: "14 WEST Noyes BLVD"},
+    {
+        id: 1,
+        city: "Canandaigua, NY",
+        phone: "+1\t585\t393\t0001",
+        address: "151 Charlotte Street",
+    },
+    {
+        id: 2,
+        city: "New York City",
+        phone: "+1\t212\t456\t0002",
+        address: "9 East 91st Street",
+    },
+    {
+        id: 3,
+        city: "Yonkers, NY",
+        phone: "+1\t914\t678\t0003",
+        address: "511 Warburton Ave",
+    },
+    {
+        id: 4,
+        city: "Sherrill, NY",
+        phone: "+1\t315\t908\t0004",
+        address: "14 WEST Noyes BLVD",
+    },
 ];
 
 const selectValue = document.querySelector(".select_city2");
@@ -132,9 +152,7 @@ selectValue.addEventListener("change", (event) => {
     address.textContent = test.find((item) => item.city === event.target.value)
         ? test.find((item) => item.city === event.target.value).address
         : "not in array";
-
 });
-
 
 const gardensSection = document.querySelector(".main__service.service");
 gardensSection
@@ -167,24 +185,50 @@ gardensSection
         }
     });
 
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+console.log(document.getElementsByClassName("dropbtn")[0]);
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+        if (event.target.closest("#myDropdown") && event.target.tagName !== "DIV") {
+            const value = event.target.getAttribute("value");
 
+            const cityName = document.querySelector("#City");
+            const phone = document.querySelector("#Phone");
+            const address = document.querySelector("#Address");
+            document.querySelector(".dropbtn").textContent = value;
+
+            //   cityName.textContent = event.target.value;
+            cityName.textContent = test.find((item) => item.city === value)
+                ? test.find((item) => item.city === value).city
+                : value;
+
+            phone.textContent = test.find((item) => item.city === value)
+                ? test.find((item) => item.city === value).phone
+                : "not in array";
+
+            address.textContent = test.find((item) => item.city === value)
+                ? test.find((item) => item.city === value).address
+                : "not in array";
+            let link = document.getElementById("mylink");
+            link.setAttribute('href', test.find((item) => item.city === value).phone);
+
+            document
+                .querySelector(".adress")
+                .classList.remove("address_hidden");
+        }
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
             }
         }
     }
-}
+};
