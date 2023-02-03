@@ -1,8 +1,25 @@
-
+.address_hidden{
+    display: none;
+}
 
 .blur {
     filter: blur(5px);
 }
+
+.pic__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 330px;
+    height: 450px;
+    transition: all;
+    transition-duration: .4s;
+}
+
+.open button img {
+    transform: rotate(180deg);
+}
+
 .buttons__second.pressed {
     background-color: #E06733;
     color: white;
@@ -386,18 +403,6 @@ html {
     gap: 55px;
     padding-bottom: 121px;
 }
-
-.pic__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 330px;
-    height: 450px;
-
-    /*border: 1px solid #696989;*/
-
-}
-
 
 .pic__item:hover {
     transform: scale(1.01);
@@ -1767,7 +1772,7 @@ select::-ms-expand {
 /*подчеркивание*/
 .open .child__text{
     /*border-top: solid 1px;*/
-/*    padding-top: 10px;*/
+    /*    padding-top: 10px;*/
 }
 
 .open .prices__item{
@@ -1854,11 +1859,11 @@ select::-ms-expand {
 
 /*.non_active:disabled*/
 
-    .non_active:disabled,
-    .non_active[disabled]{
-        border: 1px solid #999999;
-        background-color: #cccccc;
-        color: #666666;
+.non_active:disabled,
+.non_active[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
 }
 
 /*select {*/
@@ -1951,13 +1956,17 @@ select option{
 .dropdown-content a:hover {
     display: block;
     /*background-color: #ffb700;*/
-     border-bottom: #2b2b2c 1px solid;
-     color: #717171;
+    border-bottom: #2b2b2c 1px solid;
+    color: #717171;
 
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+    display: block;
+}
+
+
 
 
 .select_city2 {
@@ -1982,4 +1991,26 @@ select option{
 
 .contact__title2{
     margin-bottom: 100px;
+}
+
+@media (max-width: 380px) {
+
+
+
+    .dropdown{
+        /*max-width: 100px;*/
+        /*margin: 0 auto;*/
+        /*margin-right: 30px;*/
+
+    }
+    .dropbtn{
+        max-width: 300px;
+    }
+
+    .dropdown-content{
+        width: 300px;
+    }
+    .contact__title{
+        order: 50
+    }
 }
