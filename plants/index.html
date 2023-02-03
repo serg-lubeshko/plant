@@ -77,14 +77,14 @@
         <div class="service__nav nav">
             <h2 class="service__text">Service and our projects</h2>
             <div class="nav__menu buttons">
-                <button class="buttons__second">Gardens</button>
-                <button class="buttons__second">Lawn</button>
-                <button class="buttons__second">Planting</button>
+                <button class="buttons__second" id="Gardens">Gardens</button>
+                <button class="buttons__second" id="Lawn">Lawn</button>
+                <button class="buttons__second" id="Planting">Planting</button>
             </div>
 
         </div>
         <div class="service__picture pic">
-            <div class="pic__item">
+            <div class="pic__item Gardens">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/first_768.png" alt="pic1" class="pic__img">
                 </div>
@@ -93,7 +93,7 @@
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
-            <div class="pic__item">
+            <div class="pic__item Planting">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/2_768.png" alt="pic2" class="pic__img">
                 </div>
@@ -103,7 +103,7 @@
                 </div>
             </div>
 
-            <div class="pic__item">
+            <div class="pic__item Lawn">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/3_768.png" alt="pic3" class="pic__img">
                 </div>
@@ -112,7 +112,7 @@
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
-            <div class="pic__item">
+            <div class="pic__item Planting">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/4_768.png" alt="pic4" class="pic__img">
                 </div>
@@ -121,7 +121,7 @@
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
-            <div class="pic__item">
+            <div class="pic__item Gardens">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/5_768.png" alt="pic5" class="pic__img">
                 </div>
@@ -130,7 +130,7 @@
                     <p class="text-button__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
-            <div class="pic__item">
+            <div class="pic__item Planting">
                 <div class="pic__picture">
                     <img src="images/pictures/section3/6_768.png" alt="pic6" class="pic__img">
                 </div>
@@ -149,24 +149,102 @@
         </div>
         <div class="prices__body wrap2 body">
             <div class="body__left ">
-                <button class="prices__item button_price1">
-                    <p class="button_price__title">Basics</p>
-                    <img src="images/icons/img.png" alt="icons" class="button_price__img">
-                </button>
-                <button class="prices__item button_price2">
-                    <span class="button_price__title">Standard</span>
-                    <img src="images/icons/img.png" alt="icons" class="button_price__img">
-                </button>
-                <button class="prices__item button_price3">
-                    <span class="button_price__title">Pro care</span>
-                    <img src="images/icons/img.png" alt="icons" class="button_price__img">
-                </button>
+                <!--                <button class="prices__item button_price1">-->
+                <!--                    <p class="button_price__title">Basics</p>-->
+                <!--                    <img src="images/icons/img.png" alt="icons" class="button_price__img">-->
+                <!--                </button>-->
+                <!--                <div class="price-card">-->
+                <!--                    <div class="price-card__wrap">-->
+                <!--                        <div class="accordion__header button_price__title price_icon">!Standard</div>-->
+                <!--                        <img src="images/icons/img.png" alt="icons" class="button_price__img price_img ">-->
+                <!--                        <div class="zzz">fewefweew-->
+                <!--                        </div>-->
+
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <div class="not-open price-1">
+                    <button class="prices__item button_price1">
+                        <p class="button_price__title">Basics</p>
+
+                        <img src="images/icons/img.png" alt="icons" class="button_price__img">
+                    </button>
+                    <div class="child">
+                        <div class="not-open__main-content">
+                            <div class="div_hr"></div>
+                            <!-- <div class="accordion__header child__title price_icon">Basics</div>
+                            <img src="images/icons/img.png" alt="icons" class="button_price__img child__img"> -->
+                            <p class="child__text">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="child__text-dollar"><span>$15</span> / per hour</p>
+                            <div class="child__button ">
+                                <a href="#city1"><p class="child__button-text">Order</p></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="not-open price-2">
+                    <button class="prices__item button_price2 non_active">
+                        <p class="button_price__title">Standard</p>
+                        <img src="images/icons/img.png" alt="icons" class="button_price__img">
+                    </button>
+                    <div class="child">
+                        <div class="not-open__main-content">
+                            <div class="div_hr"></div>
+                            <!-- <div class="accordion__header child__title price_icon">Standard</div>
+                            <img src="images/icons/img.png" alt="icons" class="button_price__img child__img"> -->
+                            <p class="child__text">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="child__text-dollar"><span>$25</span> / per hour</p>
+                            <div class="child__button ">
+                                <a href="#city1"><p class="child__button-text">Order</p></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="not-open price-3">
+                    <button class="prices__item button_price3">
+                        <p class="button_price__title">Pro care</p>
+                        <img src="images/icons/img.png" alt="icons" class="button_price__img">
+                    </button>
+                    <div class="child">
+                        <div class="not-open__main-content">
+                            <div class="div_hr"></div>
+                            <!-- <div class="accordion__header child__title price_icon">Pro care</div>
+                            <img src="images/icons/img.png" alt="icons" class="button_price__img child__img"> -->
+                            <p class="child__text">Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently</p>
+                            <p class="child__text-dollar"><span>$35</span> / per hour</p>
+                            <div class="child__button ">
+                                <a href="#city1"><p class="child__button-text">Order</p></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--                <div class="not-open price-2">-->
+                <!--                    <div class="child">-->
+                <!--                        <div class="not-open__main-content">-->
+                <!--                            <div class="accordion__header child__title price_icon">Pro care</div>-->
+                <!--                            <img src="images/icons/img.png" alt="icons" class="button_price__img child__img">-->
+                <!--                            <p class="child__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>-->
+                <!--                            <p class="child__text-dollar"><span>$25</span> / per hour</p>-->
+                <!--                            <div class="child__button ">-->
+                <!--                                <p class="child__button-text">Order</p>-->
+                <!--                            </div>-->
+
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
 
             <div class="body__right">
                 <h3 class="prices__text_2">Our best <span class="title__span">gardeners</span> are ready to help you
                 </h3>
-                <button class="buttons__contact">Contact us</button>
+                <a href="#contact"><button class="buttons__contact">Contact us</button></a>
                 <img src="images/pictures/img_3.png" alt="pic" class="prices_right__img">
             </div>
         </div>
@@ -177,23 +255,63 @@
     </section>
 
     <section class="contacts" id="contact">
+
+
         <div class="wrap3">
-            <img class="contact__picture" src="images/pictures/contact/contact_woman_768.png
-" alt="pic_contact">
-            <div class="wrap3__title">
-                <h2 class="contact__title">Contact us</h2>
+            <img class="contact__picture" src="images/pictures/contact/contact_woman_768.png" alt="pic_contact">
+            <div class="contact__title">Contact us</div>
+            <div>
+                <div class="wrap3__title">
+                    <h2 class="contact__title2"> </h2>
+                </div>
+<!--                Кнопка-->
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">City</button>
+                    <div id="myDropdown" class="dropdown-content select_city2">
+<!--                        <a href="#">Link 1</a>-->
+
+                    </div>
+                </div>
+
+
+
+<!--                <label class="select__order">-->
+<!--                    <select class="contact_button select_city"  id="city1">-->
+<!--&lt;!&ndash;                        <option class="select_city__item" selected disabled hidden>City</option>&ndash;&gt;-->
+<!--                        <option class="select_city__item" selected>City</option>-->
+<!--&lt;!&ndash;                        <option class="select_city__item"><span></span></option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">New York City</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">Yonkers, NY</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <option class="select_city__item">Sherrill, NY</option>&ndash;&gt;-->
+
+<!--                    </select>-->
+
+
+                    <div class="adress">
+                        <div class="adress__wrap">
+                            <div class="adress__flex">
+                                <div class="adress__left">
+                                    <p>City:</p>
+                                    <p>Phone:</p>
+                                    <p>Office adress:</p>
+                                </div>
+                                <div class="adress__right">
+                                    <p id="City">Canandaigua, NY</p>
+                                    <p id="Phone">+1 585 393 0001</p>
+                                    <p id="Address">151 Charlotte Street</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href=”tel:+380441234567”><div class="adress__button">Call us</div></a>
+                    </div>
+                </label>
             </div>
 
-            <label class="select__order">
-                <select class="contact_button select_city " disabled>
-                    <option class="select_city__item" selected disabled hidden>City</option>
-                    <option class="select_city__item">Canandaigua, NY</option>
-                    <option class="select_city__item">New York City</option>
-                    <option class="select_city__item">Yonkers, NY</option>
-                    <option class="select_city__item">Sherrill, NY</option>
-                </select>
-            </label>
+
         </div>
+
+
     </section>
 
 
